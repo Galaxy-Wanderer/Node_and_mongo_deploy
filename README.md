@@ -63,7 +63,7 @@ Nginx is a web server that will enable us to get our app running, install it by 
 To get our server running we need to edit a nginx file:<br />
 `sudo nano /etc/nginx/sites-available/default`
 
-This will open a file, scroll down to the 'location / {}' place and write in:
+This will open a file, scroll down to the 'location / {}' place and write in:<br />
 `
     location / {
         proxy_pass http://localhost:5000; #whatever port your app runs on
