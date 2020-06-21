@@ -65,8 +65,6 @@ To get our server running we need to edit a nginx file:<br />
 
 This will open a file, scroll down to the 'location / {}' place and write in:
 `
-    server_name yourdomain.com www.yourdomain.com;
-
     location / {
         proxy_pass http://localhost:5000; #whatever port your app runs on
         proxy_http_version 1.1;
