@@ -64,7 +64,7 @@ To get our server running we need to edit a nginx file:<br />
 `sudo nano /etc/nginx/sites-available/default`
 
 This will open a file, scroll down to the 'location / {}' place and write in:<br />
-`
+`<br />
     location / {
         proxy_pass http://localhost:5000; #whatever port your app runs on
         proxy_http_version 1.1;
